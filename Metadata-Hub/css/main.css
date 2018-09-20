@@ -796,7 +796,13 @@ a:hover,a:focus{
 
 
 #accordion .body-content{
+	font-size: 14px;
+	font-weight: bold;
 	margin-bottom: 15px;
+}
+
+#accordion .body-content .con{
+	margin-bottom: 20px;
 }
 
 #accordion .panel-body:after{
