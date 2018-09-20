@@ -121,7 +121,6 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 
-
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
@@ -554,7 +553,7 @@ a:hover,a:focus{
  	margin-bottom: 10px;
  	margin-left: auto;
  	margin-right: auto;
- 	width:70%;
+ 	width:60%;
 }
  
 #accordion .panels{
