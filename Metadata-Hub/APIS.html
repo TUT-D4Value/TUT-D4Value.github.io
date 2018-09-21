@@ -128,7 +128,42 @@
 										<div class="downloadButt">
 										<a href="tracking.raml" download=""><img src="images/download.png" alt="download" title="download" /></a>
 										</div>
-										<pre class="prettyprint" id="placeholder"></pre>
+										
+										<pre class="prettyprint" id="placeholder">
+											
+title: ContainerLocation
+version: v1.1.0-20170101
+documentation:
+	- title: Container tracking
+schemas:
+	- Geolocation: !include d4v.sensor.geolocation.json
+/GeolocationResURI:
+	description: This resource describes the properties associated with the current geolocation coordinate.
+	displayName: GeoLocation
+	is: [ interface ] # valid for all methods
+	get:
+		description: |
+			Retrieves the current geolocation coordinates.
+		responses:
+			200:
+				body:
+					application/json:
+						schema: Geolocation
+						example: |
+							{
+								"rt": [”d4v.sensor.geolocation"],
+								"id": "unique_example_id",
+								”latitude": 43.00542,
+								“longitude”: 24.1252,
+								“accuracy”: 34.0
+							}
+	
+											
+											
+											
+											
+											
+										</pre>
 										</div>
 									</div>	
 								</div>
